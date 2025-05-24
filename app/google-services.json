@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "909629770625",
+    "project_id": "qr-app-22209",
+    "storage_bucket": "qr-app-22209.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909629770625:android:b21a3d295f051cf80df680",
+        "android_client_info": {
+          "package_name": "com.das361h.qr_attendance"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATvS0rGOyYTBR_LVXMLxrYeR9-eLopE5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

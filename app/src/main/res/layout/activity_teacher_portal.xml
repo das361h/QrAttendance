@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".teacherPortal">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Welcome to the QR Attendance Portal" />
+
+    <Button
+        android:id="@+id/takeAtt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take attendance" />
+
+    <Button
+        android:id="@+id/viewWeekly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View week specific attendance" />
+
+    <Button
+        android:id="@+id/viewStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View student information" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log out" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit Application" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Current Database Wipe" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Type below 'I am sure'" />
+
+        <EditText
+            android:id="@+id/retype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:hint="I am sure" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:text="I understand database will be cleared"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/wipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed to Wipe database" />
+    </LinearLayout>
+
+</LinearLayout>

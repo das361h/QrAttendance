@@ -1,0 +1,34 @@
+package com.das361h.qr_attendance;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
+public class teacherPortal extends AppCompatActivity {
+
+    Button takeAtt,viewWeekly,viewStudent,logout,exit;
+
+    //wipe
+    CheckBox checkBox;
+    Button wipe;
+    EditText retype;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_teacher_portal);
+
+        takeAtt=findViewById(R.id.takeAtt);
+        takeAtt.setOnClickListener(v -> {
+            startActivity(new Intent(teacherPortal.this, TakeAttendance.class));
+        });
+    }
+}

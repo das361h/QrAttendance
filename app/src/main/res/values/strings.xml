@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">QR-attendance</string>
+    <string-array name="week_array">
+        <item>WEEK1</item>
+        <item>WEEK2</item>
+        <item>WEEK3</item>
+        <item>WEEK4</item>
+        <item>WEEK5</item>
+        <item>WEEK6</item>
+        <item>WEEK7</item>
+        <item>WEEK8</item>
+        <item>WEEK9</item>
+        <item>WEEK10</item>
+        <item>WEEK11</item>
+        <item>WEEK12</item>
+        <item>WEEK13</item>
+        <item>WEEK14</item>
+        <item>WEEK15</item>
+        <item>WEEK16</item>
+        <item>WEEK17</item>
+        <item>WEEK18</item>
+        <item>WEEK19</item>
+        <item>WEEK20</item>
+        <item>WEEK21</item>
+        <item>WEEK22</item>
+        <item>WEEK23</item>
+        <item>WEEK24</item>
+        <item>WEEK25</item>
+        <item>WEEK26</item>
+        <item>WEEK27</item>
+        <item>WEEK28</item>
+        <item>WEEK29</item>
+        <item>WEEK30</item>
+        <item>WEEK31</item>
+        <item>WEEK32</item>
+        <item>WEEK33</item>
+        <item>WEEK34</item>
+        <item>WEEK35</item>
+        <item>WEEK36</item>
+        <item>WEEK37</item>
+        <item>WEEK38</item>
+        <item>WEEK39</item>
+        <item>WEEK40</item>
+        <item>WEEK41</item>
+        <item>WEEK42</item>
+        <item>WEEK43</item>
+        <item>WEEK44</item>
+        <item>WEEK45</item>
+        <item>WEEK46</item>
+        <item>WEEK47</item>
+        <item>WEEK48</item>
+        <item>WEEK49</item>
+        <item>WEEK50</item>
+        <item>WEEK51</item>
+        <item>WEEK52</item>
+    </string-array>
+</resources>
