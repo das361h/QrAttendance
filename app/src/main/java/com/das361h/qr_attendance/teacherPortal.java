@@ -30,5 +30,10 @@ public class teacherPortal extends AppCompatActivity {
         takeAtt.setOnClickListener(v -> {
             startActivity(new Intent(teacherPortal.this, TakeAttendance.class));
         });
+
+        viewWeekly=findViewById(R.id.viewWeekly);
+        viewWeekly.setOnClickListener(v -> {
+            startActivity(new Intent(teacherPortal.this, viewWeekly.class));
+        });
     }
 }

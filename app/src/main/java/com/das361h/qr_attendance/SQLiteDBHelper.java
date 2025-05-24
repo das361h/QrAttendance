@@ -6,6 +6,9 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SQLiteDBHelper extends SQLiteOpenHelper {
     public  static final String DB_NAME = "attendance.db";
     public  static final String T_NAME = "roster";
@@ -55,5 +58,27 @@ public class SQLiteDBHelper extends SQLiteOpenHelper {
             db.insert(T_NAME, null, cv);
         }
         c.close();
+    }
+
+    public void updateInWeekly(String sid, String week, String status) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put(week, status);
+        db.update(T_NAME, cv, "SID = ?", new String[]{sid});
+    }
+
+
+    // lists all students with attendance for a specific week
+    public List<viewWeekly.StudentList> getStudentList(String week) {
+        List<viewWeekly.StudentList> sl = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = db.rawQuery("SELECT SID, SNAME FROM " + T_NAME + " WHERE " + week + " IN ('O','P')", null);
+        while (c.moveToNext()){
+            String sid = c.getString(0);
+            String sname = c.getString(1);
+            sl.add(new viewWeekly.StudentList(sid, sname));
+        }
+        c.close();
+        return sl;
     }
 }
