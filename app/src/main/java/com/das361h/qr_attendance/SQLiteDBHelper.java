@@ -42,7 +42,7 @@ public class SQLiteDBHelper extends SQLiteOpenHelper {
         onCreate(SQLdb);
     }
 
-    public void insertorupdate(String sid, String sname, String week, String status) {
+    public void insertAttendance(String sid, String sname, String week, String status) {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor c = db.rawQuery("SELECT * FROM " + T_NAME + " WHERE SID = ?", new String[]{sid});
         ContentValues cv = new ContentValues();

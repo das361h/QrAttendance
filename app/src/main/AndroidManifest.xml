@@ -20,6 +20,9 @@
         android:theme="@style/Theme.QRattendance"
         tools:targetApi="31">
         <activity
+            android:name=".ViewStudent"
+            android:exported="false" />
+        <activity
             android:name=".viewWeekly"
             android:exported="false" />
         <activity
