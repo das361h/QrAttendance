@@ -25,6 +25,17 @@ public class viewWeekly extends AppCompatActivity {
     LinearLayout slc;
     List<StudentList> sl = new ArrayList<>();
 
+    static class StudentList {
+        String sid;
+        String sname;
+        CheckBox cb;
+
+        StudentList(String sid, String sname){
+            this.sid = sid;
+            this.sname = sname;
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,17 +81,9 @@ public class viewWeekly extends AppCompatActivity {
                 }
             }
             Toast.makeText(this, "Checked entities removed", Toast.LENGTH_SHORT).show();
+            slc.removeAllViews();
         });
     }
 
-    static class StudentList {
-        String sid;
-        String sname;
-        CheckBox cb;
 
-        StudentList(String sid, String sname){
-            this.sid = sid;
-            this.sname = sname;
-        }
-    }
 }

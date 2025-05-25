@@ -81,4 +81,20 @@ public class SQLiteDBHelper extends SQLiteOpenHelper {
         c.close();
         return sl;
     }
+
+    // this will send the whole row for a specific student like
+    //SID, SNAME, WEEK1, until WEEK52
+    //123, ALEX , ""   , until "P"
+    public Cursor getStudentInfo(String sid) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        return db.rawQuery("SELECT * FROM " + T_NAME + " WHERE SID = ?", new String[]{sid});
+    }
+
+    public void updateStudentInfo(String osid, String nsid, String nname) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put("SID", nsid);
+        cv.put("SNAME", nname);
+        db.update(T_NAME, cv, "SID = ?", new String[]{osid});
+    }
 }
