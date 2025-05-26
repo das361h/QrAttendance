@@ -8,11 +8,9 @@
     tools:context=".splash">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="197dp"
-        app:srcCompat="@drawable/p0jsjg0j"
-        tools:layout_editor_absoluteX="49dp"
-        android:layout_gravity="center"
-        tools:layout_editor_absoluteY="267dp" />
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/mouse" />
 </LinearLayout>
