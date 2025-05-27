@@ -25,10 +25,10 @@
         android:hint="Enter Student ID" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/ssi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Search student info" />
+        android:text="SSearch student information" />
 
     <EditText
         android:id="@+id/editSID"
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:text="ID" />
+        android:hint="ID" />
 
     <EditText
         android:id="@+id/editSNAME"
@@ -44,26 +44,26 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:text="Name" />
+        android:hint="Name" />
 
     <TextView
         android:id="@+id/weekAttended"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="weeks" />
+        android:layout_height="50dp"
+        android:hint="weeks" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/ui"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Update info" />
+        android:text="Update Student Information" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="37dp" />
 
     <EditText
-        android:id="@+id/classCount"
+        android:id="@+id/numClass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -71,10 +71,10 @@
         android:hint="Number of classes conducted" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/gp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Get percentage" />
+        android:text="Get Attendance Percentage" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -84,14 +84,14 @@
         <TextView
             android:id="@+id/online"
             android:layout_width="wrap_content"
-            android:layout_height="33dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             android:text="T" />
 
         <TextView
             android:id="@+id/total"
             android:layout_width="wrap_content"
-            android:layout_height="33dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             android:text="O" />
     </LinearLayout>
