@@ -8,6 +8,10 @@
     android:orientation="vertical"
     tools:context=".ViewStudent">
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
     <TextView
         android:id="@+id/textView14"
         android:layout_width="match_parent"
@@ -28,7 +32,7 @@
         android:id="@+id/ssi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SSearch student information" />
+        android:text="Search student information" />
 
     <EditText
         android:id="@+id/editSID"
@@ -60,7 +64,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="37dp" />
+        android:layout_height="25dp" />
 
     <EditText
         android:id="@+id/numClass"
@@ -86,13 +90,13 @@
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:text="T" />
+            android:text="Total" />
 
         <TextView
             android:id="@+id/total"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:text="O" />
+            android:text="Online" />
     </LinearLayout>
 </LinearLayout>

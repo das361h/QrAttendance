@@ -8,6 +8,10 @@
     android:orientation="vertical"
     tools:context=".teacherAuth">
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"

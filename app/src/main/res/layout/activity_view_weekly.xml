@@ -8,6 +8,10 @@
     android:orientation="vertical"
     tools:context=".viewWeekly">
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
     <TextView
         android:id="@+id/textView11"
         android:layout_width="match_parent"
@@ -28,8 +32,10 @@
     <LinearLayout
         android:id="@+id/StudentListContainer"
         android:layout_width="match_parent"
-        android:layout_height="514dp"
-        android:orientation="vertical"></LinearLayout>
+        android:layout_height="482dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView12"
@@ -41,5 +47,5 @@
         android:id="@+id/update"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Update" />
+        android:text="Delete Checked" />
 </LinearLayout>
