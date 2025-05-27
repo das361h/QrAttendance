@@ -42,19 +42,19 @@ public class SQLiteDBHelper extends SQLiteOpenHelper {
         onCreate(SQLdb);
     }
 
-    public void insertAttendance(String sid, String sname, String week, String status) {
+    public void insertorupdate(String sid, String sname, String week, String status) {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor c = db.rawQuery("SELECT * FROM " + T_NAME + " WHERE SID = ?", new String[]{sid});
         ContentValues cv = new ContentValues();
-        cv.put("SNAME", sname);
-        cv.put(week, status);
         //if sid already exists, update otherwise insert it
-        if (c.moveToFirst()) {
-            cv.put("WEEK" + week, status);
+        if (c.getCount()>0) {
+            cv.put(week, status);
             db.update(T_NAME, cv, "SID = ?", new String[]{sid});
         }
         else {
             cv.put("SID", sid);
+            cv.put("SNAME", sname);
+            cv.put(week, status);
             db.insert(T_NAME, null, cv);
         }
         c.close();
@@ -79,6 +79,7 @@ public class SQLiteDBHelper extends SQLiteOpenHelper {
             sl.add(new viewWeekly.StudentList(sid, sname));
         }
         c.close();
+        db.close();
         return sl;
     }
 
@@ -90,11 +91,15 @@ public class SQLiteDBHelper extends SQLiteOpenHelper {
         return db.rawQuery("SELECT * FROM " + T_NAME + " WHERE SID = ?", new String[]{sid});
     }
 
-    public void updateStudentInfo(String osid, String nsid, String nname) {
+    public boolean updateStudentInfo(String osid, String nsid, String nname) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
         cv.put("SID", nsid);
         cv.put("SNAME", nname);
         db.update(T_NAME, cv, "SID = ?", new String[]{osid});
+        db.close();
+        return true;
     }
+
+    //public String getAttendance ();
 }
