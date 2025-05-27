@@ -77,16 +77,13 @@ public class ViewStudent extends AppCompatActivity {
             c.close();
         });
 
-        ui.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                boolean update = SQLDB.updateStudentInfo(searchSID.getText().toString(), editSNAME.getText().toString(), editSNAME.getText().toString());
-                if (update) {
-                    Toast.makeText(ViewStudent.this, "Student details updated", Toast.LENGTH_SHORT).show();
-                }
-                else {
-                    Toast.makeText(ViewStudent.this, "Student details not updated", Toast.LENGTH_SHORT).show();
-                }
+        ui.setOnClickListener(v -> {
+            boolean update = SQLDB.updateStudentInfo(searchSID.getText().toString(), editSID.getText().toString(), editSNAME.getText().toString());
+            if (update) {
+                Toast.makeText(ViewStudent.this, "Student details updated", Toast.LENGTH_SHORT).show();
+            }
+            else {
+                Toast.makeText(ViewStudent.this, "Student details not updated", Toast.LENGTH_SHORT).show();
             }
         });
 

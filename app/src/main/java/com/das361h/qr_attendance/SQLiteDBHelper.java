@@ -93,11 +93,13 @@ public class SQLiteDBHelper extends SQLiteOpenHelper {
 
     public boolean updateStudentInfo(String osid, String nsid, String nname) {
         SQLiteDatabase db = this.getWritableDatabase();
+        Cursor c = db.rawQuery("SELECT * FROM " + T_NAME + " WHERE SID = ?", new String[]{nsid});
         ContentValues cv = new ContentValues();
         cv.put("SID", nsid);
         cv.put("SNAME", nname);
         db.update(T_NAME, cv, "SID = ?", new String[]{osid});
         db.close();
+        c.close();
         return true;
     }
 
