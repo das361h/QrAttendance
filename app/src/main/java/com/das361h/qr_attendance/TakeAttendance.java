@@ -81,7 +81,7 @@ public class TakeAttendance extends AppCompatActivity {
             else{
                 status="P";
             }
-            SQLHelp.insertAttendance(sid,sname,week,status);
+            SQLHelp.insertorupdate(sid,sname,week,status);
             Toast.makeText(this, "Attendance marked", Toast.LENGTH_SHORT).show();
         });
 
