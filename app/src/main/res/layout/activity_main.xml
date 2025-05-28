@@ -49,6 +49,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#0083FF"
+        android:textColor="#FFFFFF"
         android:textSize="20dp"
         android:text="Student" />
 
@@ -60,6 +61,15 @@
         android:textSize="20dp"
         android:textColor="#FFFFFF"
         android:text="Faculty" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF0000"
+        android:text="Exit application"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
 
 </LinearLayout>
 

@@ -21,6 +21,7 @@
         android:textSize="30sp"
         android:textStyle="bold"
         android:gravity="center"
+        android:textColor="#000000"
         android:text="Welcome to the QR Attendance Teacher's Portal" />
 
     <Space
@@ -59,14 +60,6 @@
         android:textColor="#FFFFFF"
         android:text="Log out" />
 
-    <Button
-        android:id="@+id/exit"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#000000"
-        android:textColor="#FFFFFF"
-        android:text="Exit Application" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -87,6 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp"
+            android:textColor="#000000"
             android:text="This button below will wipe the database. Type 'I am sure' below and check the box to continue" />
 
         <EditText
@@ -96,12 +90,15 @@
             android:ems="10"
             android:inputType="text"
             android:textSize="18dp"
+            android:textColor="#000000"
+            android:textColorHint="#F27676"
             android:hint="I am sure" />
 
         <CheckBox
             android:id="@+id/checkBox"
             android:layout_width="match_parent"
             android:layout_height="28dp"
+            android:textColor="#000000"
             android:text="I understand database will be cleared"
             android:textSize="20sp" />
 

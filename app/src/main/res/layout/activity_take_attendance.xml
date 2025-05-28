@@ -19,6 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="30sp"
+        android:textColor="#000000"
         android:textStyle="bold"
         android:text="Attendance marking" />
 
@@ -31,11 +32,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
+        android:textColor="#000000"
         android:text="Current week:" />
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:textColor="#FFFFFF"
         android:layout_height="37dp" />
 
     <Space
@@ -55,6 +59,7 @@
         android:id="@+id/textView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#000000"
         android:text="Student ID" />
 
     <EditText
@@ -62,25 +67,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
         android:hint="ID" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#000000"
         android:text="Student Name" />
 
     <EditText
         android:id="@+id/snameBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColorHint="#000000"
         android:inputType="text"
+        android:textColor="#000000"
         android:hint="Name" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#000000"
         android:text="Online Attendance" />
 
     <Space
