@@ -12,7 +12,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button studentLogin,teacherLogin;
+    Button studentLogin,teacherLogin,exit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         studentLogin=findViewById(R.id.studentLogin);
         teacherLogin=findViewById(R.id.teacherLogin);
+        exit=findViewById(R.id.exit);
 
         //teachers auth page
         teacherLogin.setOnClickListener(v -> {
@@ -34,5 +35,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(s);
         });
 
+        //exiting the application
+        exit.setOnClickListener(v -> {
+            finish();
+        });
     }
 }
