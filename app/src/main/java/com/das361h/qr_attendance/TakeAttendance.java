@@ -27,7 +27,9 @@ public class TakeAttendance extends AppCompatActivity {
     Spinner spinner;
     SQLiteDBHelper SQLHelp;
 
-    private final ActivityResultLauncher<ScanOptions> qr = registerForActivityResult(new ScanContract(), result -> {
+
+    //take data from qr code and puts them in a array
+    public final ActivityResultLauncher<ScanOptions> qr = registerForActivityResult(new ScanContract(), result -> {
         String res = result.getContents();
         if (res.contains(",")) {
             String[] data = result.getContents().split(","); //takes qr data and splits it into an array where it is separated by comma
