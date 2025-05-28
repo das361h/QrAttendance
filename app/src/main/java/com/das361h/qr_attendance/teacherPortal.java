@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class teacherPortal extends AppCompatActivity {
 
     Button takeAtt,viewWeekly,viewStudent,logout,exit;
@@ -59,5 +61,11 @@ public class teacherPortal extends AppCompatActivity {
             }
         });
 
+        logout=findViewById(R.id.logout);
+        logout.setOnClickListener(v -> {
+            FirebaseAuth.getInstance().signOut();
+            Toast.makeText(teacherPortal.this, "Logged out", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(teacherPortal.this, MainActivity.class));
+        });
     }
 }
