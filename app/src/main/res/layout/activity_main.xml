@@ -7,27 +7,37 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
+    android:background="#C3EFEF"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView1"
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:text="QR Attendance Application" />
+        android:layout_height="159dp"
+        app:srcCompat="@drawable/qrlogo" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="48dp" />
+        android:layout_height="34dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="Welcome" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textSize="20sp"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="@color/black"
         android:text="Choose your role below:" />
 
     <Space
@@ -36,14 +46,18 @@
 
     <Button
         android:id="@+id/studentLogin"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#0083FF"
+        android:textSize="20dp"
         android:text="Student" />
 
     <Button
         android:id="@+id/teacherLogin"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:textSize="20dp"
         android:text="Faculty" />
 
 </LinearLayout>
