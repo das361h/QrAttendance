@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">QR-attendance</string>
+    <string name="app_name">QR-based Attendance</string>
     <string-array name="week_array">
         <item>WEEK1</item>
         <item>WEEK2</item>

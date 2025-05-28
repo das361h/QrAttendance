@@ -56,6 +56,7 @@ public class studentPage extends AppCompatActivity {
         clr.setOnClickListener(v -> {
             SID.setText("");
             SNAME.setText("");
+            qrImg.setImageResource(0);
         });
     }
 }
