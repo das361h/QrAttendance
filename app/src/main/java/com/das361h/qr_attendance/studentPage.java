@@ -19,7 +19,7 @@ import com.journeyapps.barcodescanner.BarcodeEncoder;
 public class studentPage extends AppCompatActivity {
 
     EditText SID, SNAME;
-    Button button;
+    Button button, clr;
     ImageView qrImg;
 
     @Override
@@ -50,6 +50,11 @@ public class studentPage extends AppCompatActivity {
                 e.printStackTrace();
                 Toast.makeText(studentPage.this, "Error generating QR code", Toast.LENGTH_SHORT).show();
             }
+        });
+
+        clr.setOnClickListener(v -> {
+            SID.setText("");
+            SNAME.setText("");
         });
     }
 }
