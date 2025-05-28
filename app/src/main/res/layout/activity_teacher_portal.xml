@@ -6,6 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#C3EFEF"
+    android:gravity="center"
     tools:context=".teacherPortal">
 
     <Space
@@ -18,36 +20,51 @@
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:text="Welcome to the QR Attendance Portal" />
+        android:gravity="center"
+        android:text="Welcome to the QR Attendance Teacher's Portal" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
 
     <Button
         android:id="@+id/takeAtt"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"
         android:text="Take attendance" />
 
     <Button
         android:id="@+id/viewWeekly"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"
         android:text="View week specific attendance" />
 
     <Button
         android:id="@+id/viewStudent"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"
         android:text="View student information" />
 
     <Button
         android:id="@+id/logout"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"
         android:text="Log out" />
 
     <Button
         android:id="@+id/exit"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"
         android:text="Exit Application" />
 
     <LinearLayout
@@ -62,15 +79,15 @@
             android:layout_height="wrap_content"
             android:textColor="#FF0000"
             android:textStyle="bold"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:text="Current Database Wipe" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="Type below 'I am sure'" />
+            android:textSize="18sp"
+            android:text="This button below will wipe the database. Type 'I am sure' below and check the box to continue" />
 
         <EditText
             android:id="@+id/retype"
@@ -78,7 +95,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:textSize="20sp"
+            android:textSize="18dp"
             android:hint="I am sure" />
 
         <CheckBox
@@ -90,8 +107,10 @@
 
         <Button
             android:id="@+id/wipe"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:backgroundTint="#DED8D8"
+            android:textColor="#FF0000"
             android:text="Proceed to Wipe database" />
     </LinearLayout>
 
