@@ -85,6 +85,9 @@ public class TakeAttendance extends AppCompatActivity {
             }
             SQLHelp.insertorupdate(sid,sname,week,status);
             Toast.makeText(this, "Attendance marked", Toast.LENGTH_SHORT).show();
+            sidBox.setText("");
+            snameBox.setText("");
+            checkBox.setChecked(false);
         });
 
     }
