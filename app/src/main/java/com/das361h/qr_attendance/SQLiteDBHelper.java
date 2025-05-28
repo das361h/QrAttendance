@@ -103,5 +103,9 @@ public class SQLiteDBHelper extends SQLiteOpenHelper {
         return true;
     }
 
-    //public String getAttendance ();
+    public void deleteAllRecord(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(T_NAME, null, null);
+        db.close();
+    }
 }
