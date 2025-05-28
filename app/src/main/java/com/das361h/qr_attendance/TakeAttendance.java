@@ -73,6 +73,11 @@ public class TakeAttendance extends AppCompatActivity {
         });
 
         finalize.setOnClickListener(v -> {
+
+            if (sidBox.getText().toString().isEmpty() || snameBox.getText().toString().isEmpty()) {
+                Toast.makeText(this, "Please scan or enter all the fields", Toast.LENGTH_SHORT).show();
+                return;
+            }
             String sid=sidBox.getText().toString();
             String sname=snameBox.getText().toString();
             String week=spinner.getSelectedItem().toString();
