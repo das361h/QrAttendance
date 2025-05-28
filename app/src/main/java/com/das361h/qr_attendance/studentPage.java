@@ -31,6 +31,7 @@ public class studentPage extends AppCompatActivity {
         SNAME = findViewById(R.id.SNAME);
         button = findViewById(R.id.button);
         qrImg = findViewById(R.id.qrImg);
+        clr = findViewById(R.id.clr);
 
         button.setOnClickListener(v -> {
             String sid = SID.getText().toString();
